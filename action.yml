@@ -410,7 +410,7 @@ runs:
         -P ort.analyzer.allowDynamicVersions=${ORT_ALLOW_DYNAMIC_VERSIONS} \
         $ORT_CLI_ARGS \
         analyze \
-        -i ${$GITHUB_WORKSPACE} \
+        -i $GITHUB_WORKSPACE \
         -o ${ORT_RESULTS_PATH/$USER/ort} \
         -f JSON \
         ${ORT_CLI_ANALYZE_ARGS} || ORT_CLI_ANALYZE_EXIT_CODE=$? \
