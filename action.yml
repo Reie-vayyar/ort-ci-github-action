@@ -411,7 +411,7 @@ runs:
         $ORT_CLI_ARGS \
         analyze \
         -i $GITHUB_WORKSPACE \
-        -o ${ORT_RESULTS_PATH/$USER/ort} \
+        -o $ORT_RESULTS_ANALYZER_PATH \
         -f JSON \
         ${ORT_CLI_ANALYZE_ARGS} || ORT_CLI_ANALYZE_EXIT_CODE=$? \
         && export ORT_CLI_ANALYZE_EXIT_CODE="${ORT_CLI_ANALYZE_EXIT_CODE:-0}" \
